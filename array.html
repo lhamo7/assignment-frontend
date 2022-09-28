@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function range(start, end, step = 1) {
+        let array = [];
+
+        if (step > 0) {
+          for (let i = start; i <= end; i = i + step) array.push(i);
+        } else {
+          for (let i = start; i >= end; i = i + step) array.push(i);
+        }
+        return array;
+      }
+      console.log(range(2, 11, 1));
+
+      // QUESTION 2
+
+      function arrayList(array) {
+        for (var i = array[0]; i < Math.max.apply(Math, array); i += array[0]) {
+          var list = {
+            value: i,
+            rest: {
+              value: (i += 10),
+              rest: null,
+            },
+          };
+          return list;
+        }
+      }
+      console.log(arrayList([5, 8]));
+
+      // QUESTION3
+      //QUESTION4
+    </script>
+  </body>
+</html>

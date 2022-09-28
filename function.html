@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let minimum = function (a, b) {
+        return a <= b ? a : b;
+      };
+
+      console.log(minimum(8, 20));
+
+      // QUESTION 2
+      console.log("\n");
+
+      function even(n) {
+        if (n == 0) return true;
+        else if (n == 1) return false;
+        else if (n < 0) return even(-n);
+        else return even(n - 2);
+      }
+      console.log(even(-11));
+
+      // QUESTION 3
+      console.log("\n");
+    </script>
+  </head>
+  <body></body>
+</html>
